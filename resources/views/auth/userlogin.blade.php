@@ -96,11 +96,11 @@
     </div>
 </div>
 <div class="contact-box-border">&nbsp;</div>
-@if (Route::has('register'))
+{{-- @if (Route::has('register'))
 <div class="container">
     <li class="nav-item">
         <a class="nav-link" href="{{ route('register') }}"><button type="submit">{{ __('Creer un compte?') }}</button></a>
     </li>
 </div>
-@endif
+@endif --}}
 @endsection

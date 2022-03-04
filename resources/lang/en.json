@@ -1,0 +1,12 @@
+{
+    "Accueil": "Home",
+    "Services": "Services",
+    "Connexion": "Connect",
+    "Jour":"select day",
+    "Vous commencez à":"start time",
+    "Pour terminer à":"end time",
+    "Motif de réservation":"You want to play",
+    "Prix":"Price",
+    "Réserver":"Reserve"
+   
+}

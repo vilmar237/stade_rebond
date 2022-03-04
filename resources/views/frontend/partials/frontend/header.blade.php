@@ -15,7 +15,10 @@
       <div class="col-md-7">
           <div class="pull-right">
               <div class="header-info pull-right">
-                  <div class="contact pull-left">CONTACT: (237) 699999999</div>
+                  <div class="contact pull-left">CONTACT: (237) 699999999
+                   <p> </p> <a href="locale/en">English</a>
+                    <a href="locale/fr">Francais</a>
+                  </div>
                   <!-- Language Switch start -->
                  
                   <!-- Language Switch end -->
@@ -41,8 +44,8 @@
                   <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                       <!-- Nav-Links start -->
                       <ul class="nav navbar-nav navbar-right">
-                          <li class="active"><a href="{{route('welcome')}}" class="scroll-to">Accueil</a></li>
-                          <li><a href="#services" class="scroll-to">Services</a></li>
+                          <li class="active"><a href="{{route('welcome')}}" class="scroll-to">{{__('Accueil')}}</a></li>
+                          <li><a href="#services" class="scroll-to">{{__('Services')}}</a></li>
                           @if(!Auth::guest() && (Auth::user()->role == "C" || Auth::user()->role == "D"))
                           <li><a href="{{url('forum')}}" class="scroll-to">Equipes</a></li>
                           <li class="dropdown">
@@ -57,7 +60,10 @@
                             </form>
                             
                           @else
-                          <li><a href="{{route('user-login')}}" class="scroll-to">Connexion</a></li>
+                          <li><a href="{{route('user-login')}}" class="scroll-to">{{__('Connexion')}}</a></li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="{{ route('register') }}">{{ __('Inscription') }}</a>
+                        </li>
                           @endif
                       </ul>
                       <!-- Nav-Links end -->

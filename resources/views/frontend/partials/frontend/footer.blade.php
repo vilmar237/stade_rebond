@@ -4,10 +4,10 @@
  <section id="contact" class="container wow bounceInUp" data-wow-offset="50">
   <div class="row">
     <div class="col-md-12 title">
-      <h2>Nous joindre</h2>
+      <h2>{{__('Contact U.S')}}</h2>
     </div>
     <div class="col-md-3 col-xs-12 pull-right">
-      <h4 class="contact-box-title">Service client</h4>
+      <h4 class="contact-box-title">{{__('Customer service')}}</h4>
       <div class="contact-box">
         
         <div class="contact-box-name">Go sport </div>
@@ -59,7 +59,7 @@
 
     </div>
     <div class="col-md-6 col-xs-12 pull-left">
-      <p class="contact-info">Avez vous des préoccupations particulieres? <br>
+      <p class="contact-info">{{__('Do you have any specific concerns?')}} <br>
         <span class="address"><span class="highlight">Address:</span> Rebond Athletics Playground, bonapriso Douala</span></p>
         <form action="#" method="post" id="contact-form" name="contact-form">
             <input type="hidden" name="action" value="send_contact_form"/>
@@ -109,7 +109,7 @@
           <li><a class="scroll-to" href="#contact">Contact</a></li>
         </ul>
         <div class="clearfix"></div>
-        <p class="copyright">©2021 Stade, All Rights Reserved</p>
+        <p class="copyright">©2022 Stade, All Rights Reserved</p>
       </div>
     </div>
   </div>

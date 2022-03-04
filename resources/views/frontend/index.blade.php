@@ -4,6 +4,16 @@
 
 @section('content')
 
+
+<div>&nbsp;</div>
+<div class="container">
+  <h1>
+  <p class="text-center">
+  {{__('Welcome to Rebond Athletics Playground')}}
+  </p>
+</h1>
+</div>
+
 <!-- Teaser start -->
 <section id="teaser">
     <div class="container">
@@ -13,26 +23,48 @@
             <!-- Wrapper for slides start -->
             <div class="carousel-inner">
               <div class="item active">
-                <h1 class="title">Terrain de basket ball 10.000fr/heure
+                <h1 class="title">Basket ball 10.000fr/heure
                   <span class="subtitle">bonapriso douala</span></h1>
                   <div class="car-img">
                     <img src="frontend/img/bask.jpg" class="img-responsive" alt="car1">
                   </div>
                 </div>
                 <div class="item">
-                  <h1 class="title">Terrain volley ball 10.000/heure
+                  <h1 class="title">Volley ball 10.000/heure
                     <span class="subtitle">bonapriso douala</span></h1>
                     <div class="car-img">
                       <img src="frontend/img/voll.jpg" class="img-responsive" alt="car1">
                     </div>
                   </div>
                   <div class="item">
-                    <h1 class="title">Terrain Handball 10.000/heure
+                    <h1 class="title">Handball 10.000/heure
                       <span class="subtitle">bonapriso douala</span></h1>
                       <div class="car-img">
                         <img src="frontend/img/hand.jpg" class="img-responsive" alt="car1">
                       </div>
                     </div>
+                    <div class="item">
+                      <h1 class="title">soirée
+                        <span class="subtitle">bonapriso douala</span></h1>
+                        <div class="car-img">
+                          <img src="frontend/img/noctune.jpg" class="img-responsive" alt="car1">
+                        </div>
+                      </div>
+
+                      <div class="item">
+                        <h1 class="title">nocturne
+                          <span class="subtitle">bonapriso douala</span></h1>
+                          <div class="car-img">
+                            <img src="frontend/img/noc2.jpg" class="img-responsive" alt="car1">
+                          </div>
+                        </div>
+                        <div class="item">
+                          <h1 class="title">disponible
+                            <span class="subtitle">bonapriso douala</span></h1>
+                            <div class="car-img">
+                              <img src="frontend/img/vol1.jpg" class="img-responsive" alt="car1">
+                            </div>
+                          </div>
                 </div>
                 <!-- Wrapper for slides end -->
 
@@ -69,11 +101,11 @@
 
                   <table class="table table-bordered">
                       <tr>
-                          <th>Jour <span class="text-danger">*</span></th>
+                          <th>{{__('Jour')}} <span class="text-danger">*</span></th>
                           <td><input id="datefield" name="day" min='1899-01-01' type="date" class="form-control" /></td>
                       </tr>
                       <tr>
-                          <th>Vous commencez à ? <span class="text-danger">*</span></th>
+                          <th>{{__('Vous commencez à')}} ? <span class="text-danger">*</span></th>
                           <td>
                             <select class="form-control select1" name="debut">
                                   <option>Choisir une heure de début</option>
@@ -86,7 +118,7 @@
                           </td>
                       </tr>
                       <tr>
-                          <th>Pour terminer à ? <span class="text-danger">*</span></th>
+                          <th>{{__('Pour terminer à')}} ? <span class="text-danger">*</span></th>
                           <td>
                             <select class="form-control select2" name="fin">
                                   <option>Choisir une heure de fin</option>
@@ -99,7 +131,7 @@
                           </td>
                       </tr>
                       <tr>
-                          <th>Motif de réservation <span class="text-danger">*</span></th>
+                          <th>{{__('Motif de réservation')}} <span class="text-danger">*</span></th>
                           <td>
                             <select class="form-control" name="type_stade">
                                 <option>Choisir l'activité à mener</option>
@@ -109,7 +141,7 @@
                                     </option>
                                 @endforeach   
                             </select>
-                              <p>Prix: <span class="show-room-price">10.000 /h</span></p>
+                              <p>{{__('Prix')}}: <span class="show-room-price">10.000 /h</span></p>
                           </td>
                       </tr>
                       <tr>
@@ -119,7 +151,7 @@
                             
                               <input type="hidden" name="roomprice" class="room-price" value="" />
                             <input type="hidden" name="ref" value="front" />
-                              <input type="submit" class="btn btn-primary" value="Réserver" />
+                              <input type="submit" class="btn btn-primary" value="{{__('Réserver')}}" />
                           </td> 
                       </tr>
                   </table>
@@ -147,9 +179,9 @@
     <div class="col-md-6">
       <div class="service-box wow fadeInLeft" data-wow-offset="100">
         <div class="service-icon">#</div>
-        <h3 class="service-title">Rapidité</h3>
+        <h3 class="service-title">{{__('Speed')}}</h3>
         <div class="clearfix"></div>
-        <p class="service-content">Reserver facilement et rapidement en moins de 03 min sur la plateforme afin d'avoir une plage horaire sur le stade.</p>
+        <p class="service-content">{{__('Book easily and quickly in less than 01 min on the platform in order to have a time slot at the stadium.')}}</p>
       </div>
     </div>
     <!-- Service Box end -->
@@ -161,9 +193,9 @@
     <div class="col-md-6">
       <div class="service-box wow fadeInRight" data-wow-offset="100">
         <div class="service-icon">#</div>
-        <h3 class="service-title">Réglement électronique</h3>
+        <h3 class="service-title">{{__('Electronic payment')}}</h3>
         <div class="clearfix"></div>
-        <p class="service-content">Regler votre réservation par paiement électronique.</p>
+        <p class="service-content">{{__('Pay your reservation by electronic payment')}}.</p>
         <img src="frontend/img/mtnOrange.jpg" width="70" alt=""/>
       </div>
     </div>
@@ -173,9 +205,9 @@
     <div class="col-md-6">
       <div class="service-box wow fadeInLeft" data-wow-offset="100">
         <div class="service-icon">#</div>
-        <h3 class="service-title">Réservations illimitées</h3>
+        <h3 class="service-title">{{__('Unlimited reservations')}}</h3>
         <div class="clearfix"></div>
-        <p class="service-content">vous avez la possibilité d'effetuer plusieurs réservations et à des jours differents sur le stade Rebond Athletics Playground.</p>
+        <p class="service-content">{{__('You have the possibility to make several reservations and on different days at the Rebond Athletics Playground stadium')}}</p>
       </div>
     </div>
     <!-- Service Box end -->
@@ -184,7 +216,7 @@
     <div class="col-md-6">
       <div class="service-box wow fadeInRight" data-wow-offset="100">
         <div class="service-icon">#</div>
-        <h3 class="service-title">Assistance disponible</h3>
+        <h3 class="service-title">{{__('Support available')}}</h3>
         <div class="clearfix"></div>
         <div class="contact-box">
           <img src="frontend/img/moi.jpg" width="35" alt="contact-img">

@@ -84,6 +84,9 @@ class PublicController extends Controller
         return redirect('/');
     }
 
+
+    
+
     public function customer_register(Request $request)
     {
         $validator = Validator::make($request->all(), [
@@ -93,7 +96,7 @@ class PublicController extends Controller
         ]);
 
         if ($validator->fails()) {
-            return back()->withErrors($validator, 'register')->withInput();
+            return back()->withErrors($validator, 'user-register')->withInput();
         }
 
         $id = User::create([
