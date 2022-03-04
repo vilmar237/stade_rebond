@@ -61,7 +61,7 @@
     <div class="col-md-6 col-xs-12 pull-left">
       <p class="contact-info">{{__('Do you have any specific concerns?')}} <br>
         <span class="address"><span class="highlight">Address:</span> Rebond Athletics Playground, bonapriso Douala</span></p>
-        <form action="#" method="post" id="contact-form" name="contact-form">
+        <form action="{{ url('sendMail') }}" method="#" id="contact-form" name="contact-form">
             <input type="hidden" name="action" value="send_contact_form"/>
             <input type="text" class="website_hp" name="website_hp"/>
 

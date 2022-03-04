@@ -9,11 +9,13 @@ use Illuminate\Http\Request;
 use App\Models\Reservation;
 use App\Models\TypeTerrain;
 use App\Enums\UserRoles;
+use App\Mail\rebondMail;
 use App\Models\Hour;
 use App\Models\User;
 use Carbon\Carbon;
 use Session;
 use Auth;
+use Illuminate\Support\Facades\Mail;
 
 class PublicController extends Controller
 {
@@ -85,7 +87,10 @@ class PublicController extends Controller
     }
 
 
-    
+    public function sendMail(){
+        Mail::to('djilovilmar@gmail.com')->send(new rebondMail());
+        
+    }
 
     public function customer_register(Request $request)
     {
@@ -115,6 +120,8 @@ class PublicController extends Controller
         return back();
 
     }
+
+    
 
     public function booking_history($id)
     {
@@ -188,6 +195,9 @@ class PublicController extends Controller
 
                             $booking = Reservation::find($id);
                             //$booking->id_type_terrain = $request->type_stade;
+
+                         // ici je vais mettre le code de redirection vers le modal ou le vers l'api de paiement
+
                             $booking->save();
                         
                         //}

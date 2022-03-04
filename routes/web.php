@@ -20,6 +20,9 @@ Route::post('user-register', [App\Http\Controllers\PublicController::class, 'cus
 
 Route::post('user-logout', [App\Http\Controllers\PublicController::class, 'user_logout']);
 
+
+Route::get('sendMail', [App\Http\Controllers\PublicController::class, 'sendMail']);
+
 Auth::routes();
 
 Route::get('locale', [App\Http\Controllers\LocalizationController::class, 'getLang']);
