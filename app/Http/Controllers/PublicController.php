@@ -55,6 +55,19 @@ class PublicController extends Controller
         return view('auth.userlogin');
     }
 
+    public function userRegister(Request $request)
+    {
+
+        $dat = Session::get('data');
+        //dd(Session::get('data'));
+        if($dat == 1)
+        {
+            Toastr::error('Veuillez vous inscrire','Erreur');
+        }
+        return view('auth.userRegister');
+    }
+
+
     public function user_login(Request $request)
     {
         if (Login::attempt(['email' => $request->email, 'password' => $request->password])) {
@@ -101,7 +114,9 @@ class PublicController extends Controller
         ]);
 
         if ($validator->fails()) {
-            return back()->withErrors($validator, 'user-register')->withInput();
+            //Toastr::error('Veuillez verifier le formulaire','Echec');
+            return back()->withErrors($validator, 'userRegister')->withInput();
+            
         }
 
         $id = User::create([

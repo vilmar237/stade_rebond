@@ -15,6 +15,9 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', [App\Http\Controllers\PublicController::class, 'welcome'])->name('welcome');
 Route::get('user-login', [App\Http\Controllers\PublicController::class, 'userlogin'])->name('user-login');
+
+Route::get('userRegister', [App\Http\Controllers\PublicController::class, 'userRegister'])->name('userRegister');
+
 Route::post('user-login', [App\Http\Controllers\PublicController::class, 'user_login']);
 Route::post('user-register', [App\Http\Controllers\PublicController::class, 'customer_register']);
 

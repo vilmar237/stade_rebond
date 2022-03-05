@@ -62,7 +62,7 @@
                           @else
                           <li><a href="{{route('user-login')}}" class="scroll-to">{{__('Connexion')}}</a></li>
                           <li class="nav-item">
-                            <a class="nav-link" href="{{ route('register') }}">{{ __('Inscription') }}</a>
+                            <a class="nav-link" href="{{ route('userRegister') }}">{{ __('Inscription') }}</a>
                         </li>
                           @endif
                       </ul>
