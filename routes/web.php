@@ -1,5 +1,6 @@
 <?php
 
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -25,6 +26,7 @@ Route::post('user-logout', [App\Http\Controllers\PublicController::class, 'user_
 
 
 Route::get('sendMail', [App\Http\Controllers\PublicController::class, 'sendMail']);
+Route::post('contact', [App\Http\Controllers\contactUs::class, 'contact']);
 
 Auth::routes();
 

@@ -11,14 +11,16 @@ class rebondMail extends Mailable
 {
     use Queueable, SerializesModels;
 
+    public $data;
+
     /**
      * Create a new message instance.
      *
      * @return void
      */
-    public function __construct()
+    public function __construct($data)
     {
-        //
+        $this->data= $data;
     }
 
     /**
@@ -28,7 +30,11 @@ class rebondMail extends Mailable
      */
     public function build()
     {
-        return $this->from('rebondstade@gmail.com')
-                    ->view('emails.mail');
+        return $this->from('rebondstade@gmail.com')->subject('nous joindre')
+                    ->view('emails.mail')->with('data',$this->data);
+    }
+    public function ins(){
+        return $this->from('rebondstade@gmail.com')->subject('nous joindre')
+                    ->view('emails.mail')->with('data',$this->data);
     }
 }

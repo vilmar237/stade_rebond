@@ -61,14 +61,33 @@
     <div class="col-md-6 col-xs-12 pull-left">
       <p class="contact-info">{{__('Do you have any specific concerns?')}} <br>
         <span class="address"><span class="highlight">Address:</span> Rebond Athletics Playground, bonapriso Douala</span></p>
-        <form action="{{ url('sendMail') }}" method="#" id="contact-form" name="contact-form">
+        <form action="{{ url('contact') }}" method="post" id="contact-form" name="contact-form">
+          @csrf
+
+          @if($errors->any())
+          @foreach($errors->all() as $error)
+              <p class="text-danger">{{$error}}</p>
+          @endforeach
+      @endif
+
+
+      @if($message=Session::get('success'))
+          <div class="alert alert-succes alert-block">
+            <button type="button" class="close" data-dismiss="alert">x</button>
+            <strong>{{$message}}
+            </strong>  
+   {{--   au cas je veux sur javascript <script> alert('merci') </script> --}}
+          </div>
+
+      @endif
+      
             <input type="hidden" name="action" value="send_contact_form"/>
             <input type="text" class="website_hp" name="website_hp"/>
 
           <div class="alert hidden" id="contact-form-msg"></div>
 
           <div class="form-group">
-            <input type="text" class="form-control first-name text-field" name="first-name" placeholder="First Name:">
+            <input type="text" class="form-control first-name text-field" name="name" placeholder="First Name:">
             <input type="text" class="form-control last-name text-field" name="last-name" placeholder="Last Name:">
             <div class="clearfix"></div>
           </div>

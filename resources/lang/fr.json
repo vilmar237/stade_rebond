@@ -1,7 +1,7 @@
 {
     "Accueil": "Accueil",
-    "Services": "nos services",
-    "Connexion": "se connecter",
+    "Services": "Nos services",
+    "Connexion": "Se connecter",
     "Jour":"choix du jour",
     "Vous commencez à":"Vous commencez à",
     "Pour terminer à":"Pour terminer à",
@@ -21,7 +21,9 @@
     "Do you have any specific concerns?":"Avez vous des préoccupations particulieres?",
     "Customer service":"Service client",
     "Contact U.S":"Nous joindre",
-    "Welcome to Rebond Athletics Playground":"Bienvenue sur le site Rebond Athletics Playground"
+    "Welcome to Rebond Athletics Playground":"Bienvenue sur le site Rebond Athletics Playground",
+    "Confirm Password":"Confirmer le Mot de passe "
+
 
    
 }

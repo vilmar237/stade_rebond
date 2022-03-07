@@ -86,7 +86,7 @@
 
                   <div class="alert alert-danger hidden" id="car-select-form-msg">
                     <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
-                    <strong>Note:</strong> veillez remplir tous les champs 
+                    <strong>Note:</strong>{{__('veillez remplir tous les champs')}}  
                   </div>
 
                   @if($errors->any())

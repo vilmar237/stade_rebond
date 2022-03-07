@@ -3,7 +3,7 @@
 @section('content')
 <div class="container">
    
-        <span><p>VEUILLEZ REMPLIR LES CHAMPS POUR CREER VOTRE COMPTE</p></span>
+        <span><p>{{__('VEUILLEZ REMPLIR LES CHAMPS POUR CREER VOTRE COMPTE')}}</p></span>
         <div>&nbsp;</div>
         <div>&nbsp;</div>
 </div>
