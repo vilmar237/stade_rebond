@@ -151,6 +151,8 @@ class PublicController extends Controller
 
     public function book(Request $request)
     {
+        $hour_now = Carbon::now()->format('H:i');
+        $todayDate = Carbon::now()->format('Y-m-d');
         
         if (Auth::user() && Auth::user()->role == 'C') {
             $validation = Validator::make($request->all(), [
@@ -162,15 +164,20 @@ class PublicController extends Controller
 
             if ($validation->fails()) {
                 return back()->withErrors($validation)->withInput();
-            } else {
-                $hour_now = Carbon::now()->format('H:i');
-
-                $todayDate = Carbon::now()->format('d-m-Y');
+            }
+            
+            
+            else {
+                
                 //dd($todayDate);
 
                 //dd($hour_now);
                 //if($request->debut > $hour_now && $request->fin > $request->debut && $request->day != $todayDate)//<=
                 //{
+
+
+                   
+
 
                    if($request->fin < $request->debut){
                     Toastr::error('L heure de fin doit etre superieur à l heure de debut','Erreur');
@@ -178,6 +185,9 @@ class PublicController extends Controller
                    }
                     if($request->debut != $request->fin)
                     {
+
+
+                        
                         //$check_available_booking = Reservation::where('day',$request->day)->where('debut',$request->debut)->where('fin',$request->fin)->first();
                         $check_available_booking1 = Reservation::where('day',$request->day)->get();
                         foreach($check_available_booking1 as $reserv)
@@ -193,6 +203,11 @@ class PublicController extends Controller
                                 Toastr::error('Vous pouvez uniquement faire des reservations à partir d\'une heure supérieure à '.$reserv->fin.' pour la date choisie','Erreur');
                                 return back();
                             }
+                            elseif($todayDate===$request->day && $request->debut < $hour_now){
+                                
+                                Toastr::error('Lheure choisie est déjà pasée','Erreur');
+                                return back();
+                               }
                         }
 
                         //if($check_available_booking == null)
@@ -208,7 +223,6 @@ class PublicController extends Controller
                                 'id_type_terrain' => $request->type_stade,
                                 'prix' => $nouveauPrix,
                             ])->id;
-
                             $booking = Reservation::find($id);
                             //$booking->id_type_terrain = $request->type_stade;
 

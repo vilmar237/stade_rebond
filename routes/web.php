@@ -25,7 +25,7 @@ Route::post('user-register', [App\Http\Controllers\PublicController::class, 'cus
 Route::post('user-logout', [App\Http\Controllers\PublicController::class, 'user_logout']);
 
 
-Route::get('sendMail', [App\Http\Controllers\PublicController::class, 'sendMail']);
+//Route::get('sendMail', [App\Http\Controllers\PublicController::class, 'sendMail']);
 Route::post('contact', [App\Http\Controllers\contactUs::class, 'contact']);
 
 Auth::routes();
