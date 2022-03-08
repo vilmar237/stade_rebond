@@ -131,7 +131,7 @@ class PublicController extends Controller
         $user->username = $request->name;
         $user->save();
 
-        Toastr::success('Vous êtes inscrit avec succès ! veuillez vous connecter ici','Reservation');
+        Toastr::success('Vous êtes inscrit avec succès ! veuillez vous connecter ici','Rebond');
        // Mail::to($user['email'])->send(new rebondMail($user));
         return back();
 
