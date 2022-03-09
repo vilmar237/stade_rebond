@@ -7,10 +7,10 @@ use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Mail\Mailable;
 use Illuminate\Queue\SerializesModels;
 
-class rebondMail extends Mailable
+class receive extends Mailable
 {
     use Queueable, SerializesModels;
-
+    
     public $data;
 
     /**
@@ -31,7 +31,6 @@ class rebondMail extends Mailable
     public function build()
     {
         return $this->from('rebondstade@gmail.com')->subject('nous joindre')
-                    ->view('emails.mail')->with('data',$this->data);
+                    ->view('emails.mailInscription')->with('data',$this->data);
     }
-  
 }
