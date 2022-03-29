@@ -207,7 +207,7 @@
         <div class="service-icon">#</div>
         <h3 class="service-title">{{__('Unlimited reservations')}}</h3>
         <div class="clearfix"></div>
-        <p class="service-content">{{__('You have the possibility to make several reservations and on different days at the Rebond Athletics Playground stadium')}}</p>
+        <p class="service-content">{{__('You can make several reservations and on different days at the Rebond Athletics Playground stadium')}}</p>
       </div>
     </div>
     <!-- Service Box end -->
