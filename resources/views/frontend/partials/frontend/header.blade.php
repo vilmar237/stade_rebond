@@ -1,19 +1,23 @@
 <!-- Header start -->
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<header data-spy="affix" data-offset-top="39" data-offset-bottom="0" class="large">
+<header data-spy="affix" data-offset-top="39" data-offset-bottom="0" class="large affix-top">
 
   <div class="row container box">
       <div class="col-md-5">
           <!-- Logo start -->
           <div class="brand">
-              <h1><a class="scroll-to" href="#top"><img class="img-responsive" src="frontend/img/logo1.png" width="100" alt="Rebond"></a></h1>
+              <h1><a class="scroll-to" href="#top"><img class="img-responsive" src="frontend/img/logo1.png" alt="Rebond"></a></h1>
           </div>
           <!-- Logo end -->
       </div>
 
       <div class="col-md-7">
-          <div class="pull-right">
+
+    
+          {{-- 
+            ancienne position 
+            <div class="pull-right">
               <div class="header-info pull-right">
                   <div class="contact pull-left">CONTACT: (237) 699999999
                    <p> </p> <a href="locale/en">English</a>
@@ -23,9 +27,11 @@
                  
                   <!-- Language Switch end -->
               </div>
-          </div>
+          </div> --}}
 
-          <div class="clearfix"></div>
+          <div class="clearfix">CONTACT: (237) 699999999
+            <p> </p> <a href="locale/en">English</a>
+             <a href="locale/fr">Francais</a></div>
 
           <!-- start navigation -->
           <nav class="navbar navbar-default" role="navigation">

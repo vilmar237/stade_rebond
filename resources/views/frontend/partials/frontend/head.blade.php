@@ -42,5 +42,6 @@
 
 
     <!-- Fav and touch icons -->
+    <link rel="icon" href="{{asset('frontend/img/logo1.png')}}">
 
     @stack('styles')
