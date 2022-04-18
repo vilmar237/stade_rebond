@@ -7,7 +7,7 @@
       <div class="col-md-5">
           <!-- Logo start -->
           <div class="brand">
-              <h1><a class="scroll-to" href="#top"><img class="img-responsive" src="frontend/img/logo1.png" alt="Rebond"></a></h1>
+              <h1><a class="scroll-to" href="#top"><img class="img-responsive" src="{{url('/frontend/img/logo1.png')}}" alt="Rebond"></a></h1>
           </div>
           <!-- Logo end -->
       </div>
@@ -30,8 +30,8 @@
           </div> --}}
 
           <div class="clearfix">CONTACT: (237) 699999999
-            <p> </p> <a href="locale/en">English</a>
-             <a href="locale/fr">Francais</a></div>
+            <p> </p> <a href="/locale/en">English</a>
+             <a href="/locale/fr">Francais</a></div>
 
           <!-- start navigation -->
           <nav class="navbar navbar-default" role="navigation">

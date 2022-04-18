@@ -23,21 +23,21 @@
             <!-- Wrapper for slides start -->
             <div class="carousel-inner">
               <div class="item active">
-                <h1 class="title">Basket ball 10.000fr/heure
+                <h1 class="title">Basket ball 10.000fr/h
                   <span class="subtitle">bonapriso douala</span></h1>
                   <div class="car-img">
                     <img src="frontend/img/bask.jpg" class="img-responsive" alt="car1">
                   </div>
                 </div>
                 <div class="item">
-                  <h1 class="title">Volley ball 10.000/heure
+                  <h1 class="title">Volley ball 10.000/h
                     <span class="subtitle">bonapriso douala</span></h1>
                     <div class="car-img">
                       <img src="frontend/img/voll.jpg" class="img-responsive" alt="car1">
                     </div>
                   </div>
                   <div class="item">
-                    <h1 class="title">Handball 10.000/heure
+                    <h1 class="title">Handball 10.000/h
                       <span class="subtitle">bonapriso douala</span></h1>
                       <div class="car-img">
                         <img src="frontend/img/hand.jpg" class="img-responsive" alt="car1">
