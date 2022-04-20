@@ -19,9 +19,10 @@
 	<meta property="og:description" content="Zenix - Crypto Admin Dashboard" />
 	<meta property="og:image" content="../../zenix.dexignzone.com/xhtml/social-image.png" />
 	<meta name="format-detection" content="telephone=no">
-    <title>{{ config('app.name', 'Stade') }} </title>
+    <title> Rebond</title>
+    {{-- <title>{{ config('app.name', 'Stade') }} </title> --}}
     <!-- Favicon icon -->
-    <link rel="icon" type="image/png" sizes="16x16" href="{{asset('backend/images/favicon.png')}}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{asset('frontend/img/logo1.png')}}">
 	<link rel="stylesheet" href="{{asset('backend/vendor/chartist/css/chartist.min.css')}}">
     <!-- Toastr -->
     <link rel="stylesheet" href="{{asset('backend/vendor/toastr/css/toastr.min.css')}}">

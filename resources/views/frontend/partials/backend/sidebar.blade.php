@@ -5,7 +5,7 @@
     <div class="deznav-scroll">
         <div class="main-profile">
             <div class="image-bx">
-                <img src="frontend/img/moi.jpg" alt="">
+                <img src="{{url('/frontend/img/moi.jpg')}}" alt="">
                 <a href="javascript:void(0);"><i class="fa fa-cog" aria-hidden="true"></i></a>
             </div>
             <h5 class="name"><span class="font-w400">Hello,</span> Vilmar</h5>
@@ -145,8 +145,8 @@
             </li>
         </ul>
         <div class="copyright">
-            <p><strong>Zenix Crypto Admin Dashboard</strong> © 2021 All Rights Reserved</p>
-            <p class="fs-12">Made with <span class="heart"></span> by DexignZone</p>
+            <p><strong>CityCmr</strong> © 2022 All Rights Reserved</p>
+            <p class="fs-12">Made with <span class="heart"></span> v18-237</p>
         </div>
     </div>
 </div>

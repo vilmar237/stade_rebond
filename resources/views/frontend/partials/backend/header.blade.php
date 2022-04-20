@@ -709,7 +709,7 @@
                     </li>
                     <li class="nav-item dropdown header-profile">
                         <a class="nav-link" href="#" role="button" data-toggle="dropdown">
-                            <img src="frontend/img/moi.jpg" width="20" alt=""/>
+                            <img src="{{('/frontend/img/moi.jpg')}}" width="20" alt=""/>
                             <div class="header-info">
                                 <span>vilmar le 18</span>
                                 <small>Super Admin</small>
