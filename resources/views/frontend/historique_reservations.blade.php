@@ -3,6 +3,8 @@
 @section('title', "Historique des réservations")
 
 @section('content')
+<div class="container">
+</div>
 <section class="mt-120 mb-4">
     <h2 class="primary text-center bg-strip">Historique des réservations</h2>
 </section>
