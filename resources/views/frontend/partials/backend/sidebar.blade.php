@@ -9,7 +9,7 @@
                 <a href="javascript:void(0);"><i class="fa fa-cog" aria-hidden="true"></i></a>
             </div>
             <h5 class="name"><span class="font-w400">Hello,</span> Vilmar</h5>
-            <p class="email">vilmar@mail.com</p>
+            <p class="email">djilovilmar@mail.com</p>
         </div>
         <ul class="metismenu" id="menu">
             <li class="nav-label first">Menu Principal</li>

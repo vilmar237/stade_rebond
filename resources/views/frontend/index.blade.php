@@ -205,9 +205,9 @@
     <div class="col-md-6">
       <div class="service-box wow fadeInLeft" data-wow-offset="100">
         <div class="service-icon">#</div>
-        <h3 class="service-title">{{__('Unlimited reservations')}}</h3>
+        <h3 class="service-title">{{__('Forum')}}</h3>
         <div class="clearfix"></div>
-        <p class="service-content">{{__('You can make several reservations and on different days at the Rebond Athletics Playground stadium')}}</p>
+        <p class="service-content">{{__('log in and chat on the forum to find players')}}</p>
       </div>
     </div>
     <!-- Service Box end -->
@@ -219,7 +219,7 @@
         <h3 class="service-title">{{__('Support available')}}</h3>
         <div class="clearfix"></div>
         <div class="contact-box">
-          <img src="frontend/img/moi.jpg" width="35" alt="contact-img">
+      
           <div class="contact-box-name">vilmar237</div>
           <div class="contact-box-phon"><span class="highlight">Phone:</span> 666-999-888</div>
           <div class="contact-box-email"><span class="highlight">Email:</span> vilmar@example.com</div>

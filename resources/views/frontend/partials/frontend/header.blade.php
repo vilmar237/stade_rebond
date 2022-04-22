@@ -53,7 +53,7 @@
                           <li class="active"><a href="{{route('welcome')}}" class="scroll-to">{{__('Accueil')}}</a></li>
                           <li><a href="#services" class="scroll-to">{{__('Services')}}</a></li>
                           @if(!Auth::guest() && (Auth::user()->role == "C" || Auth::user()->role == "D"))
-                          <li><a href="{{url('forum')}}" class="scroll-to">Equipes</a></li>
+                          <li><a href="{{url('forum')}}" class="scroll-to">Forum</a></li>
                           <li class="dropdown">
                               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">{{Auth::user()->username}} <span class="caret"></span></a>
                               <ul class="dropdown-menu" role="menu">
