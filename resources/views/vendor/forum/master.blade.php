@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
+<link rel="icon" href="{{asset('frontend/img/logo1.png')}}">
     <title>
         @if (isset($thread))
             {{ $thread->title }} -
@@ -192,19 +192,19 @@
                     <li class="nav-item">
                         <a class="nav-link" href="{{ url(config('forum.web.router.prefix')) }}">{{ trans('forum::general.index') }}</a>
                     </li>
-                    <!-- <li class="nav-item">
+                     <li class="nav-item">
                         <a class="nav-link" href="{{ route('forum.recent') }}">{{ trans('forum::threads.recent') }}</a>
                     </li>
-                    @auth
+                    {{-- @auth
                         <li class="nav-item">
                             <a class="nav-link" href="{{ route('forum.unread') }}">{{ trans('forum::threads.unread_updated') }}</a>
                         </li>
-                    @endauth
+                    @endauth --}}
                     @can ('moveCategories')
                         <li class="nav-item">
                             <a class="nav-link" href="{{ route('forum.category.manage') }}">{{ trans('forum::general.manage') }}</a>
                         </li>
-                    @endcan -->
+                    @endcan 
                 </ul>
                 <ul class="navbar-nav">
                     @if (Auth::check())

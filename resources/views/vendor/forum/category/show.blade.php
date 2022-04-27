@@ -151,6 +151,8 @@
     </div>
 
     @if (! $threads->isEmpty())
+
+    {{-- // je retire la fonction marquer comme lu
         @can ('markThreadsAsRead')
             <div class="text-center mt-3">
                 <button class="btn btn-primary px-5" data-open-modal="mark-threads-as-read">
@@ -159,7 +161,7 @@
             </div>
 
             @include ('forum::category.modals.mark-threads-as-read')
-        @endcan
+        @endcan --}}
     @endif
 
     @can ('manageCategories')
