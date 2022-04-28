@@ -207,7 +207,7 @@
         <div class="service-icon">#</div>
         <h3 class="service-title">{{__('Forum')}}</h3>
         <div class="clearfix"></div>
-        <p class="service-content">{{__('log in and chat on the forum to find players')}}</p>
+        <p class="service-content">{{__('Log in and find players in the Forum area')}}</p>
       </div>
     </div>
     <!-- Service Box end -->
