@@ -205,6 +205,13 @@
                             <a class="nav-link" href="{{ route('forum.category.manage') }}">{{ trans('forum::general.manage') }}</a>
                         </li>
                     @endcan 
+
+                    
+                </ul>
+                {{-- menu langue  --}}
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item"><a href="/locale/en">English / </a></li>
+                    <li class="nav-item"><a href="/locale/fr"> Francais</a></li>
                 </ul>
                 <ul class="navbar-nav">
                     @if (Auth::check())
@@ -230,6 +237,7 @@
                         </li>
                     @endif
                 </ul>
+                
             </div>
         </div>
     </nav>

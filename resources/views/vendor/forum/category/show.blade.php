@@ -15,7 +15,9 @@
         <div class="clearfix">
             @if ($category->accepts_threads)
                 @can ('createThreads', $category)
-                    <a href="{{ Forum::route('thread.create', $category) }}" class="btn btn-primary float-end">{{ trans('forum::threads.new_thread') }}</a>
+                    <a href="{{ Forum::route('thread.create', $category) }}" class="btn btn-primary float-end">Commenter
+                        {{-- {{ trans('forum::threads.new_thread') }} --}}
+                    </a>
                 @endcan
             @endif
 
@@ -129,7 +131,9 @@
                         {{ trans('forum::threads.none_found') }}
                         @can ('createThreads', $category)
                             <br>
-                            <a href="{{ Forum::route('thread.create', $category) }}">{{ trans('forum::threads.post_the_first') }}</a>
+                            <a href="{{ Forum::route('thread.create', $category) }}">
+                                {{ trans('forum::threads.post_the_first') }}
+                            </a>
                         @endcan
                     </div>
                 </div>
@@ -142,7 +146,9 @@
                 <div class="col col-xs-4 text-end">
                     @if ($category->accepts_threads)
                         @can ('createThreads', $category)
-                            <a href="{{ Forum::route('thread.create', $category) }}" class="btn btn-primary">{{ trans('forum::threads.new_thread') }}</a>
+                            <a href="{{ Forum::route('thread.create', $category) }}" class="btn btn-primary">Commenter
+                                {{-- {{ trans('forum::threads.new_thread') }} --}}
+                            </a>
                         @endcan
                     @endif
                 </div>

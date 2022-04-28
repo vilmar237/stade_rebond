@@ -7,7 +7,8 @@
 
         @can ('createCategories')
             <button type="button" class="btn btn-primary" data-open-modal="create-category">
-                {{ trans('forum::categories.create') }}
+                {{-- {{ trans('forum::categories.create') }} --}}
+                publier une réservation
             </button>
 
             @include ('forum::category.modals.create')

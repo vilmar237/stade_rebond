@@ -2,18 +2,22 @@
 
 @section ('content')
     <div id="create-thread">
-        <h2>{{ trans('forum::threads.new_thread') }} ({{ $category->title }})</h2>
+        <h2>Nouveau commentaire
+            {{-- {{ trans('forum::threads.new_thread') }}  --}}
+            ({{ $category->title }})</h2>
 
         <form method="POST" action="{{ Forum::route('thread.store', $category) }}">
             @csrf
 
             <div class="mb-3">
-                <label for="title">{{ trans('forum::general.title') }}</label>
+                <label for="title">
+                    {{-- {{ trans('forum::general.title') }} ou  --}}
+                    pseudo du joueur</label>
                 <input type="text" name="title" value="{{ old('title') }}" class="form-control">
             </div>
-
+                    
             <div class="mb-3">
-                <textarea name="content" class="form-control">{{ old('content') }}</textarea>
+                <textarea name="content" class="form-control">{{ old('content') }} observation</textarea>
             </div>
 
             <div class="text-end">
