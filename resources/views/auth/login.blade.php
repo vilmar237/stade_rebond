@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('frontend.layouts.frontend_layout')
 
 @section('content')
 <div class="container">
@@ -32,6 +32,10 @@
                                     </span>
                                 @enderror
                             </div>
+                        </div>
+                        <div>
+                            &nbsp;
+
                         </div>
 
                         <div class="row mb-3">

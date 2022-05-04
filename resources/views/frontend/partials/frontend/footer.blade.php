@@ -128,7 +128,7 @@
           <li><a class="scroll-to" href="#contact">Contact</a></li>
         </ul>
         <div class="clearfix"></div>
-        <p class="copyright">©2022 Stade, All Rights Reserved</p>
+        <p class="copyright">©2022 Stade, All Rights <a href="/admin">Reserved</a></p>
       </div>
     </div>
   </div>
