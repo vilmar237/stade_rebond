@@ -29,7 +29,7 @@
               </div>
           </div> --}}
 
-          <div class="clearfix">CONTACT: (237) 699999999
+          <div class="clearfix">CONTACT: (237) 692 257 2377
             <p> </p> <a href="/locale/en">English</a>
              <a href="/locale/fr">Francais</a></div>
 

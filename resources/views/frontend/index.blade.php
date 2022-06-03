@@ -220,9 +220,9 @@
         <div class="clearfix"></div>
         <div class="contact-box">
       
-          <div class="contact-box-name">vilmar237</div>
-          <div class="contact-box-phon"><span class="highlight">Phone:</span> 666-999-888</div>
-          <div class="contact-box-email"><span class="highlight">Email:</span> vilmar@example.com</div>
+          <div class="contact-box-name">IT CITY</div>
+          <div class="contact-box-phon"><span class="highlight">Phone:</span> 694802152</div>
+          <div class="contact-box-email"><span class="highlight">Email:</span> rebondstade@gmail.com</div>
           <div class="clearfix"></div>
         </div>
       </div>
