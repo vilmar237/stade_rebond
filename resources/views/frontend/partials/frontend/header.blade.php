@@ -7,7 +7,7 @@
       <div class="col-md-5">
           <!-- Logo start -->
           <div class="brand">
-              <h1><a class="scroll-to" href="#top"><img class="img-responsive2" src="{{url('/frontend/img/logo1.png')}}" alt="Rebond"></a></h1>
+              <h1><a class="scroll-to" href="#top"><img class="img-responsive2" src="{{url('/frontend/img/logo-rebond.jpg')}}" alt="Rebond"></a></h1>
           </div>
           <!-- Logo end -->
       </div>
@@ -44,7 +44,7 @@
                           <span class="icon-bar"></span>
                           <span class="icon-bar"></span>
                       </button>
-                      <a class="navbar-brand scroll-to" href="#top"><img src={{url('/frontend/img/logo1.png')}}  class="img-responsive2" alt="Rebond"></a>
+                      <a class="navbar-brand scroll-to" href="#top"><img src={{url('/frontend/img/logo-rebond.jpg')}}  class="img-responsive2" alt="Rebond"></a>
                   </div>
                   <!-- Collect the nav links, for toggling -->
                   <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
